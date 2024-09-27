@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    z-index: 1;
+}
+@font-face {
+    font-family: 'OldLondon';
+    src: url('fonts/OldLondon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-size: 100%;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px 40px;
+    height: 60px;
+}
+header p{
+    font-size: 40px;
+    font-family: 'OldLondon', Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: normal;
+}
+header button{
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+main{
+    background-color: #eeeeee;
+    margin: 30px;
+    padding: 20px;
+}
+.cntrImgAndInfos{
+    display: flex;
+    width: 100%;
+}
+.cntrImgAndInfos > div{
+    min-width: 50% !important;
+}
+.cntrImgs{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.cntrImgMain{
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+}
+.cntrImgMain img{
+    background-color: #ccc8c8;
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+
+}
+.cntrMaisImg{
+    display: flex;
+    flex-direction: column;
+}
+.cntrMaisImg img{
+    background-color: #ccc8c8;
+    min-width: 90px;
+    min-height: 90px;
+    max-width: 90px;
+    max-height: 90px;
+    margin-bottom: 10px;
+}
+
+.cntrInfos{
+    padding-left: 10px;
+}
+.cntrInfos h1{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.subTitle{
+    font-size: 20px;
+}
+.preco{
+    color: green;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.titleSimples{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.titleSimples span{
+    color: white;
+    background-color: rgb(221, 172, 206);
+}

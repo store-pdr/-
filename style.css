@@ -1,0 +1,345 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    z-index: 1;
+}
+@font-face {
+    font-family: 'OldLondon';
+    src: url('fonts/OldLondon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-size: 100%;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px 40px;
+    height: 60px;
+}
+header p{
+    font-size: 40px;
+    font-family: 'OldLondon', Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: normal;
+}
+header button{
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+main{
+    position: relative;
+    overflow-x: hidden;
+}
+.raio2{
+    position: absolute;
+    height: calc(100vh - 60px);
+    top: 0px;
+    right: 40%;
+    z-index: 0;
+    opacity: .1;
+}
+.banner{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: calc(100vh - 80px);
+}
+
+.cntrL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+}
+.cntrL div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+}
+.cntrL div p{
+    margin: 20px 0px;
+    font-size: 14px;
+}
+.cntrL div h1{
+    font-size: 80px;
+}
+.contato{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+}
+.cntrConteudo button{
+    padding: 4px;
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+.cntrConteudo button svg{
+
+    width: 20px;
+    height: 20px;
+}
+button{
+    cursor: pointer;
+}
+.cntrR{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    align-items: flex-end;
+    width: 100%;
+}
+.cntrR div{
+    width: 100%;
+    height: 100%;
+    max-height: calc(100vh - 100px);
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.cntrR img{
+    height: 100%;
+    margin-bottom: -5px;
+    min-width: fit-content;
+}
+.cntrConteudo{
+    padding: 50px 60px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 30px 30px 0px 0px;
+    margin: 0px 10px;
+}
+.cntrTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cntrConteudo h2{
+    font-size: 30px;
+}
+.cntrBox{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+@media (max-width: 1240px) {
+    .cntrL div h1 {
+        font-size: 70px;
+    }
+    .banner {
+        min-height: calc(100vh - 90px);
+    }
+}
+@media (max-width: 1200px) {
+    .banner {
+        min-height: calc(100vh - 110px);
+    }
+}
+@media (max-width: 1150px) {
+    .banner {
+        min-height: calc(100vh - 140px);
+    }
+}
+@media (max-width: 1080px) {
+    .cntrL div h1 {
+        font-size: 60px;
+    }
+    .banner {
+        min-height: calc(100vh - 170px);
+    }
+}
+@media (max-width: 1000px) {
+    .cntrL div h1 {
+        font-size: 50px;
+    }
+    .banner {
+        min-height: calc(100vh - 190px);
+    }
+    .cntrL div button {
+        font-size: 16px;
+        width: 160px;
+        height: 36px;
+    }
+    
+}
+@media (max-width: 860px) {
+    .cntrConteudo {
+        padding: 50px 40px;
+    }
+}
+
+@media (max-width: 825px) {
+    .cntrL {
+        min-width: 60%;
+    }
+    .cntrR {
+        padding: 0px;
+        align-items: center;
+    }
+    .cntrR div {
+        justify-content: center;
+        align-items: center;
+    }
+    .cntrR img {
+        height: 100%;
+        margin-bottom: -5px;
+        min-width: 200px;
+        padding: 12px;
+    }
+}
+@media (max-width: 750px) {
+    .cntrConteudo {
+        padding: 50px 30px;
+    }
+}
+@media (max-width: 700px) {
+    .cntrR {
+        display: none;
+    }
+    .banner {
+        display: flex;
+        height: 100%;
+        padding: 20px 0px;
+        align-items: center;
+    }
+    .cntrL{
+        width: 100%;
+        height: fit-content;
+    }
+    .cntrL div {
+        transform: scale(1.08);
+    }
+    .raio2 {
+        right: -60px;
+    }
+
+}
+@media (max-width: 620px) {
+    .cntrL div {
+        margin-top: 0px;
+    }
+    .cntrConteudo h2 {
+        font-size: 26px;
+    }
+}
+@media (max-width: 500px) {
+    header p {
+        font-size: 30px;
+    }
+    .cntrL div h1 {
+        font-size: 40px;
+    }
+    .cntrL div button {
+        font-size: 16px;
+        width: 150px;
+        height: 30px;
+    }
+    .cntrL {
+        justify-content: flex-start;
+    }
+    .cntrL div {
+        margin-left: 50PX;
+    }
+
+}
+@media (max-width: 450px) {
+    .cntrConteudo {
+        padding: 30px 20px;
+    }
+    .cntrConteudo h2 {
+        font-size: 22px;
+    }
+}
+@media (max-width: 350px) {
+    .cntrL div h1 {
+        font-size: 38px;
+    }
+    .cntrL div p {
+        margin: 20px 0px;
+        font-size: 12px;
+    }
+    .cntrConteudo h2 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 320px) {
+
+}
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+.boxImgPost{
+    cursor: pointer;
+    position: relative;
+}
+.boxImgPost p{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.boxImgPost p span{
+    font-size: 20px;
+    margin-right: 4px;
+    opacity: .9;
+}
+.boxImgPost img{
+    border-radius: 10px;
+}
+
+
+  /* Responsividade */
+  @media (max-width: 1000px) {
+    .container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media (max-width: 800px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 400px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
