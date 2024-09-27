@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDR's store - QR code</title>
+    <link rel="stylesheet" href="redi.css">
+</head>
+<body>
+    <div class="raio">
+        <img class="imgRaio" src="imgs/raio.png" alt="">
+    </div>
+    <main>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><linearGradient id="b" x1=".142" x2=".142" y1=".142" y2="23.858" gradientUnits="userSpaceOnUse"><stop stop-opacity="1" stop-color="#8a009d" offset="0"></stop><stop stop-opacity="1" stop-color="#010101" offset="1"></stop></linearGradient><clipPath id="a"><path d="M0 0h24v24H0z" fill="#000000" opacity="1" data-original="#000000" class=""></path></clipPath><g clip-path="url(#a)"><path fill="url(#b)" d="M12.979 4.794 12 .142l-.979 4.652a8.059 8.059 0 0 1-6.227 6.227L.142 12l4.652.979a8.06 8.06 0 0 1 6.227 6.227L12 23.858l.979-4.652a8.059 8.059 0 0 1 6.227-6.227L23.858 12l-4.652-.979a8.059 8.059 0 0 1-6.227-6.227z" opacity="1" data-original="url(#b)" class=""></path></g></g></svg>
+        <h1>PDR's store</h1>
+        <div class="conteudoCarta">
+            <p>Querido(a) cliente,</p>
+            <p>Estamos muito gratos pela sua recente compra na PDR'. Ficamos muito<br>felizes em saber que você escolheu nossa loja, e esperamos<br>vê-lo(a) novamente em breve.</p>
+            <p>Se precisar de qualquer coisa, entre em contato conosco <a class="linkWpp" href="https://wa.me/5524998428760" target="_blank" rel="noopener noreferrer">clicando aqui.</a><br>Estamos sempre à disposição para ajudar com o que for necessário.</p>
+            <p>Com carinho,</p>
+            <p>Pedro Elias<br>PDR'</p>
+        </div>
+
+    </main>
+
+    <div class="cntrMensagem">
+        <div class="boxMensagem">
+            <div class="topoInsta">
+                <div class="cntrImg">
+                    <div class="cntrNota">
+                        <p>No insta tem desconto</p>
+                        <div class="bola1"></div>
+                        <div class="bola2"></div>
+                    </div>
+                    <img src="imgs/Perfil.png" alt="">
+                </div>
+                <div class="cntrBio">
+                    <p>@pdrstoreoficial</p>
+                    <p>𝗣𝗗𝗥'𝘀 𝘀𝘁𝗼𝗿𝗲 ⚡</p>
+                    <p>📦 Envio pra todo canto do mundo</p>
+                    <p>💸 Se apaixone pela peça ou receba seu dinheiro de... <span>mais</span></p>
+                </div>
+            </div>
+            <div class="cntrBioMobile">
+                <p>📦 Envio pra todo canto do mundo</p>
+                <p>💸 Se apaixone pela peça ou receba seu dinheiro de... <span>mais</span></p>
+            </div>
+            <div class="cntrBtnInsta">
+                <button id="btnInstaSeguir">Que tal seguir nosso perfil?</button>
+                <button id="btnInstaFechar">Agora não</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="cntrBntNotfi">
+            <div class="notification-badge">1</div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill="#dc442b" fill-rule="evenodd" d="M256 0C114.841 0 0 114.842 0 256s114.839 256 256 256 256-114.841 256-256S397.16 0 256 0zm33.161 390.613a43.449 43.449 0 0 1-76.4-32.367h86.475a43.5 43.5 0 0 1-10.081 32.375zm114.674-51.861c-1.3 1.617-4.025 2.593-7.29 2.593l-281.088-.007c-3.265 0-5.994-.962-7.293-2.586a3.545 3.545 0 0 1-.306-.45 2.757 2.757 0 0 1 .306-.449l55.461-68.931a8.417 8.417 0 0 0 1.867-5.293V196.5a90.507 90.507 0 0 1 181.014.007v67.121a8.481 8.481 0 0 0 1.857 5.3l55.47 68.923a2.937 2.937 0 0 1 .306.453 3.24 3.24 0 0 1-.303.448z" opacity="1" data-original="#0291f7" class=""></path></g></svg>
+        </div>
+
+    </footer>
+
+<script>
+
+    document.querySelector('.cntrBntNotfi').addEventListener('click', function() {
+        document.querySelector('.cntrBntNotfi').style.display = 'none';
+        document.querySelector('.cntrMensagem').style.display = 'flex';
+        document.querySelector('.raio').style.zIndex = '2';
+        document.querySelector('.imgRaio').style.opacity = '.3';
+    
+        
+    });
+    document.querySelector('#btnInstaFechar').addEventListener('click', function() {
+        document.querySelector('.cntrBntNotfi').style.display = 'flex';
+        document.querySelector('.cntrMensagem').style.display = 'none';
+        document.querySelector('.imgRaio').style.opacity = '.15';
+
+    });
+
+    document.querySelector('#btnInstaSeguir').addEventListener('click', function() {
+        window.open("https://www.instagram.com/pdrstoreoficial/", "_blank");
+    });
+
+
+</script>
+
+</body>
+</html>
