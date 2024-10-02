@@ -47,6 +47,7 @@ main{
     right: 40%;
     z-index: 0;
     opacity: .1;
+
 }
 .banner{
     display: flex;
@@ -101,11 +102,11 @@ main{
 button{
     cursor: pointer;
 }
-.cntrR{
+.cntrR {
     display: flex;
     justify-content: center;
     padding: 0px;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
 }
 .cntrR div{
@@ -113,34 +114,106 @@ button{
     height: 100%;
     max-height: calc(100vh - 100px);
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
+}
+.cntrR picture{
+    height: 90%;
+    border-radius: 10px;
 }
 .cntrR img{
     height: 100%;
-    margin-bottom: -5px;
-    min-width: fit-content;
+    border-radius: 10px;
 }
 .cntrConteudo{
     padding: 50px 60px;
     background-color: rgb(228, 228, 228);
     border-radius: 30px 30px 0px 0px;
     margin: 0px 10px;
+    padding-bottom: 200px;
 }
 .cntrTitle{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+}
+.cntrColor{
+    display: flex;
+
 }
 .cntrConteudo h2{
     font-size: 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
 }
+.cntrConteudo p{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.cntrConteudo p span{
+    font-size: 16px;
+    opacity: .6;
+}
+.boxColor{
+    display: flex;
+}
+.btnColor{
+    background-color: #ddd;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+.btnColor-bordo{
+    background-color: #680008;
+}
+.btnColor-preto{
+    background-color: rgb(29, 29, 29);
+}
+.btnColor-azul{
+    background-color: #242b3b;
+}
+.btnColor-branco{
+    background-color: rgb(250, 250, 250);
+}
+.btnColor-roxo{
+    background-color: rgb(121, 0, 121);
+    color: white;
+}
+.btnColor-roxo,
+.btnColor-branco{
+    cursor: no-drop;
+}
+.borderBtnColor{
+    border: 2px solid rgba(0, 0, 0, 0);
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 2px;
+    transition: .1s;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .cntrBox{
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-top: 30px;
+
 }
+.imgProduto{
+    transition: 1s;
+}
+
 
 @media (max-width: 1240px) {
     .cntrL div h1 {
@@ -232,6 +305,16 @@ button{
     .raio2 {
         right: -60px;
     }
+    .cntrColor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cntrConteudo p {
+        font-size: 20px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
 
 }
 @media (max-width: 620px) {
@@ -241,6 +324,7 @@ button{
     .cntrConteudo h2 {
         font-size: 26px;
     }
+
 }
 @media (max-width: 500px) {
     header p {
@@ -293,7 +377,7 @@ button{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    padding: 20px;
+    padding: 20px 0px;
     max-width: 1200px;
     width: 100%;
 }
@@ -308,15 +392,14 @@ button{
     position: absolute;
     bottom: 10px;
     right: 10px;
+    opacity: .5;
 }
 .boxImgPost p span{
     font-size: 20px;
     margin-right: 4px;
     opacity: .9;
 }
-.boxImgPost img{
-    border-radius: 10px;
-}
+
 
 
   /* Responsividade */
@@ -334,7 +417,9 @@ button{
 
   @media (max-width: 600px) {
     .container {
-      grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 0px;
+
     }
   }
 
@@ -343,3 +428,175 @@ button{
       grid-template-columns: 1fr;
     }
   }
+  .box {
+    border: 2px solid transparent; /* Borda padrão invisível */
+    transition: border 0.5s; /* Transição suave */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+}
+
+
+.active {
+    border-color: rgb(0, 0, 0); /* Borda roxa */
+}
+
+
+footer{
+    display: flex;
+    background-color: black;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer > img{
+    width: 200px;
+    height: 200px;
+}
+.cntrInsta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.boxPerfil{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.boxPerfil img{
+    width: 100px;
+    height: 100px;
+}
+.boxPerfil span{
+    color: white;
+    margin-left: 30px;
+}
+.boxPerfil span p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.boxPerfil a{
+    text-decoration: none;
+    color: white;
+    opacity: .5;
+
+}
+.txt{
+    color: white;
+    font-size: 16px;
+    margin: 20px 30px 0px 30px;
+    max-width: 25%;
+
+}
+.txt strong {
+    margin-bottom: 20px;
+}
+.cntrBntsFooter{
+    width: fit-content;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.cntrBntsFooter p{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.cntrBntsFooter button{
+    width: 150px;
+    padding: 10px 0px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    background-color: #ccc;
+}
+
+@media (max-width: 1150px) {
+    .boxPerfil {
+        margin-left: 10px;
+    }
+    .txt {
+        max-width: 35%;
+    }
+}
+@media (max-width: 1110px) {
+    .boxPerfil {
+        align-items: center;
+        flex-direction: column;
+    }
+    .boxPerfil span {
+        margin-left: 0px;
+    }
+    .boxPerfil img {
+        margin-bottom: 10px;
+    }
+    .txt {
+        max-width: 45%;
+    }
+}
+@media (max-width: 1070px) {
+    footer > img {
+        width: 160px;
+        height: 160px;
+    }
+}
+@media (max-width: 1000px) {
+    .txt{
+        display: none;
+    }
+    .boxPerfil {
+        flex-direction: row;
+    }
+    .boxPerfil img {
+        margin-right: 18px;
+    }
+}
+@media (max-width: 750px) {
+    .txt{
+        display: none;
+    }
+    .boxPerfil {
+        flex-direction: column;
+    }
+    .boxPerfil img {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 650px) {
+    footer {
+        padding: 20px 10px;
+    }
+}
+@media (max-width: 550px) {
+    footer > img {
+        display: none;
+    }
+}
+@media (max-width: 400px) {
+    .borderBtnColor {
+        margin-right: 6px;
+        padding: 2px;
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (max-width: 380px) {
+    .borderBtnColor {
+        margin-right: 6px;
+        padding: 2px;
+        width: 56px;
+        height: 56px;
+    }
+    .btnColor {
+        width: 46px;
+        height: 46px;
+        font-size: 10px;
+    }
+    .borderBtnColor-roxo{
+        display: none;
+    }
+}
+

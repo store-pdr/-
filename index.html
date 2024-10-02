@@ -28,31 +28,89 @@
                         <!-- Quando a tela for maior que 1000px -->
                         <source srcset="imgs/camisaHeader3.png" media="(min-width: 600px) and (max-width: 825px)">
                         <!-- Quando a tela for menor que 1000px -->
-                        <img src="imgs/camisaHeader.png" alt="Imagem Responsiva">
+                        <img src="imgs/Amor centro.jpg" alt="Imagem Responsiva">
                       </picture>
                 </div>
             </div>    
         </div>
         <div class="cntrConteudo">
             <div class="cntrTitle">
-                <h2>Lançamentos</h2>
-                <span>
-                    <button><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 447.243 447.243" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M420.361 192.229a31.967 31.967 0 0 0-5.535-.41H99.305l6.88-3.2a63.998 63.998 0 0 0 18.08-12.8l88.48-88.48c11.653-11.124 13.611-29.019 4.64-42.4-10.441-14.259-30.464-17.355-44.724-6.914a32.018 32.018 0 0 0-3.276 2.754l-160 160c-12.504 12.49-12.515 32.751-.025 45.255l.025.025 160 160c12.514 12.479 32.775 12.451 45.255-.063a32.084 32.084 0 0 0 2.745-3.137c8.971-13.381 7.013-31.276-4.64-42.4l-88.32-88.64a64.002 64.002 0 0 0-16-11.68l-9.6-4.32h314.24c16.347.607 30.689-10.812 33.76-26.88 2.829-17.445-9.019-33.88-26.464-36.71z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg></button>
-                    <button><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 447.243 447.243" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(-1,1.2246467991473532e-16,-1.2246467991473532e-16,-1,447.242244720459,447.2415199279785)"><path d="M420.361 192.229a31.967 31.967 0 0 0-5.535-.41H99.305l6.88-3.2a63.998 63.998 0 0 0 18.08-12.8l88.48-88.48c11.653-11.124 13.611-29.019 4.64-42.4-10.441-14.259-30.464-17.355-44.724-6.914a32.018 32.018 0 0 0-3.276 2.754l-160 160c-12.504 12.49-12.515 32.751-.025 45.255l.025.025 160 160c12.514 12.479 32.775 12.451 45.255-.063a32.084 32.084 0 0 0 2.745-3.137c8.971-13.381 7.013-31.276-4.64-42.4l-88.32-88.64a64.002 64.002 0 0 0-16-11.68l-9.6-4.32h314.24c16.347.607 30.689-10.812 33.76-26.88 2.829-17.445-9.019-33.88-26.464-36.71z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg></button>
-                </span>
+                <h2>Todos lançamentos</h2>
+
+                <div class="cntrColor">
+                    <p>
+                        Escolha uma cor
+                        <br>
+                        <span>3 cores disponiveis</span>
+                    </p>
+                    <div class="boxColor">
+                        <div class="box box-bordo borderBtnColor borderBtnColor-bordo">
+                            <div class="btnColor btnColor-bordo"></div>
+                        </div>
+                        
+                        <div class="active box-preto box borderBtnColor borderBtnColor-preto">
+                            <div class="btnColor btnColor-preto"></div>
+                        </div>
+                        
+                        <div class="box-azul box borderBtnColor borderBtnColor-azul">
+                            <div class="btnColor btnColor-azul"></div>
+                        </div>
+
+
+
+                        <div class="borderBtnColor borderBtnColor-branco">
+                            <div class="btnColor btnColor-branco">
+                                Esgotado
+                            </div>
+                        </div>
+                        <div class="borderBtnColor borderBtnColor-roxo">
+                            <div class="btnColor btnColor-roxo">
+                                Esgotado
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="container">
-                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img src="imgs/camisa.jpg" alt=""></div>
-                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img src="imgs/camisa.jpg" alt=""></div>
-                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img src="imgs/camisa.jpg" alt=""></div>
-                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img src="imgs/camisa.jpg" alt=""></div>
-                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img src="imgs/camisa.jpg" alt=""></div>
-                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img src="imgs/camisa.jpg" alt=""></div>
+                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img class="imgProduto" src="imgs/produtos/004.png" alt=""></div>
+                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img class="imgProduto" src="imgs/produtos/007.png" alt=""></div>
+                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img class="imgProduto" src="imgs/produtos/010.png" alt=""></div>
+                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img class="imgProduto" src="imgs/produtos/013.png" alt=""></div>
+                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img class="imgProduto" src="imgs/produtos/016.png" alt=""></div>
+                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img class="imgProduto" src="imgs/produtos/019.png" alt=""></div>
+                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img class="imgProduto" src="imgs/produtos/022.png" alt=""></div>
+                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img class="imgProduto" src="imgs/produtos/028.png" alt=""></div>
+                <div class="boxImgPost" onclick="produtoSelect()"><p class="precoPost"><span>R$</span>24,99</p><img class="imgProduto" src="imgs/produtos/031.png" alt=""></div>
             </div>
 
         </div>
     </main>
+    <footer>
+        <img src="imgs/pdrstoreoficial_qr.png" alt="">
+        <div class="cntrInsta">
+            <div class="boxPerfil">
+                <img src="imgs/Perfil.png" alt="">
+                <span>
+                    <p class="name">PDR's store⚡</p>
+                    <a href="https://www.instagram.com/pdrstoreoficial/?hl=pt-br" target="_blank" rel="noopener noreferrer">@pdrstoreoficial</a>
+                </span>
+
+            </div>
+        </div>
+        
+        <p class="txt"> <strong>🌟 Descubra a Nossa Loja Independente! 🌟</strong> <br><br>Somos uma marca que oferece produtos acessíveis, todos feitos com tinta de qualidade. Temos garantia de 7 dias e enviamos rapidamente, para que você possa aproveitar suas novas camisas sem esperar. Ao escolher nossa loja, você apoia um negócio independente e ainda recebe peças que refletem seu estilo único. Venha fazer parte da nossa história!</p>
+
+
+        <div class="cntrBntsFooter">
+            <p>Links úteis</p>
+            <button onclick="contato()">Fale consco</button>
+            <button onclick="reclamação()">Reclamações</button>
+            <button onclick="duvida()">Dúvidas</button>
+            <button onclick="erroNoSite()">Relatar um erro</button>
+        </div>
+    </footer>
 
     <script src="scr.js"></script>
 </body>

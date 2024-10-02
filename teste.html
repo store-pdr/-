@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs com Borda Cíclica</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 4px solid transparent; /* Borda padrão invisível */
+            transition: border 0.5s; /* Transição suave */
+        }
+
+        .box-azul {
+            background-color: lightblue;
+        }
+
+        .box-bordo {
+            background-color: lightcoral;
+        }
+
+        .box-preto {
+            background-color: lightgreen;
+        }
+
+        .active {
+            border-color: purple; /* Borda roxa */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="boxColor">
+        <div onclick="trocarCor('bordo')" class="box box-bordo borderBtnColor borderBtnColor-bordo">
+            <div class="btnColor btnColor-bordo"></div>
+        </div>
+
+        <div onclick="trocarCor('preto')" class="active box-preto box borderBtnColor borderBtnColor-preto">
+            <div class="btnColor btnColor-preto"></div>
+        </div>
+        <div onclick="trocarCor('azul')" class="box-azul box borderBtnColor borderBtnColor-azul">
+            <div class="btnColor btnColor-azul"></div>
+        </div>
+
+
+
+<script>
+    let current = 0; // Índice da div ativa
+    const boxes = document.querySelectorAll('.box'); // Seleciona todas as divs
+
+    function corAtt(indice) {
+        // Usa o índice para determinar o nome da div
+        const boxNames = ['box-bordo', 'box-azul', 'box-preto'];
+        console.log(`Div com borda: ${boxNames[indice]}`);
+    }
+
+    function changeBorder() {
+        boxes[current].classList.remove('active'); // Remove a classe 'active' da div atual
+        current = (current + 1) % boxes.length; // Move para a próxima div
+        boxes[current].classList.add('active'); // Adiciona a classe 'active' na nova div
+        
+        corAtt(current); // Chama a função para atualizar o nome da div
+    }
+
+    setInterval(changeBorder, 2000); // Muda a borda a cada 2 segundos
+</script>
+
+</body>
+</html>
