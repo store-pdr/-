@@ -582,6 +582,9 @@ footer > img{
         width: 60px;
         height: 60px;
     }
+    .banner {
+        min-height: calc(100vh - 350px);
+    }
 }
 @media (max-width: 380px) {
     .borderBtnColor {
