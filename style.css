@@ -43,6 +43,7 @@ main{
 .raio2{
     position: absolute;
     height: calc(100vh - 60px);
+    min-width: fit-content;
     top: 0px;
     right: 40%;
     z-index: 0;
@@ -311,9 +312,10 @@ button{
         align-items: center;
     }
     .cntrConteudo p {
-        font-size: 20px;
-        margin-right: 0px;
-        margin-bottom: 20px;
+        display: none;
+    }
+    .cntrConteudo h2 {
+        margin-bottom: 30px;
     }
 
 }
@@ -425,7 +427,7 @@ button{
 
   @media (max-width: 400px) {
     .container {
-      grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
   }
   .box {
