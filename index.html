@@ -7,6 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="shadow">
+        <div class="cntrOndeComprar">
+            <h2>Por onde prefere comprar?</h2>
+            <p>*Os preços são diferentes devido as taxas de cada plataforma de venda</p>
+            <button class="btnWhatsappPag">
+                <div class="boxBtnPag1">
+                    <p>WhatsApp</p>
+                </div>
+                <div class="boxBtnPag2 boxBtnPagWpp">
+                    <p><span class="rs">R$</span>24,99 <br><span class="frete">+ frete</span></p>
+                    <img src="imgs/plataformas/whatsapp.svg" alt="">
+                </div>
+            </button>
+            <button class="btnWhatsappPag">
+                <div class="boxBtnPag1">
+                    <p>Shopee</p>
+                </div>
+                <div class="boxBtnPag2 boxBtnPagShp">
+                    <p><span class="rs">R$</span>34,90 <br><span class="frete">frete grátis</span></p>
+                    <img src="imgs/plataformas/shopee.svg" alt="">
+                </div>
+            </button>
+            <button class="btnWhatsappPag">
+                <div class="boxBtnPag1">
+                    <p>Mercado livre</p>
+                </div>
+                <div class="boxBtnPag2 boxBtnPagML">
+                    <p><span class="rs">R$</span>34,90 <br><span class="frete">frete grátis</span></p>
+                    <img src="imgs/plataformas/ml.svg" alt="">                  
+                </div>
+            </button>
+            <button class="btnWhatsappPag">
+                <div class="boxBtnPag1">
+                    <p>OLX</p>
+                </div>
+                <div class="boxBtnPag2 boxBtnPagOLX">
+                    <p><span class="rs">R$</span>29,90 <br><span class="frete">+ frete</span></p>
+                    <img src="imgs/plataformas/olx.svg" alt="">               
+                </div>
+            </button>
+            <button id="cancelar" onclick="fecharProdutoSelect()">Cancelar</button>
+        </div>
+    </div>
     <header>
         <p>PDR's store</p>
         <button class="carrinho">car</button>
@@ -26,7 +69,7 @@
                 <div>
                     <picture>
                         <!-- Quando a tela for maior que 1000px -->
-                        <source srcset="imgs/camisaHeader3.png" media="(min-width: 600px) and (max-width: 825px)">
+                        <source srcset="imgs/produtos/009.png" media="(min-width: 600px) and (max-width: 825px)">
                         <!-- Quando a tela for menor que 1000px -->
                         <img src="imgs/Amor centro.jpg" alt="Imagem Responsiva">
                       </picture>

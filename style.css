@@ -311,7 +311,7 @@ button{
         flex-direction: column;
         align-items: center;
     }
-    .cntrConteudo p {
+    .cntrColor p {
         display: none;
     }
     .cntrConteudo h2 {
@@ -605,3 +605,143 @@ footer > img{
     }
 }
 
+.shadow{
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.cntrOndeComprar{
+    background-color: #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+.cntrOndeComprar h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.cntrOndeComprar > p{
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+.cntrOndeComprar button{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+    height: 60px;
+    padding-left: 20px;
+}
+
+.boxBtnPag1{
+
+}
+.boxBtnPag1 p{
+    font-size: 20px;
+    color: black;
+}
+.boxBtnPag2{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #bbb;
+    border-radius: 20px 20px;
+    overflow: hidden;
+    padding-left: 4px;
+}
+.boxBtnPag2 p{
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.boxBtnPag2 .rs{
+    font-size: 14px;
+    margin-right: 4px;
+}
+.boxBtnPag2 .frete{
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.boxBtnPag2 img{
+    width: 60px;
+    height: 60px;
+
+}
+.boxBtnPagWpp {
+    background-color: #25d366;
+}
+.boxBtnPagShp {
+    background-color: #ee4e2e;
+}
+.boxBtnPagML {
+    background-color: #ffe821;
+    
+}
+.boxBtnPagML p{color: black !important;}
+.boxBtnPagOLX{
+    background-color: #6e0ad6;
+
+}
+
+#cancelar{
+    background: none;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
+    height: 30px;
+    padding-left: 0px;
+}
+
+
+@media (max-width: 450px) {
+    .cntrOndeComprar h2 {
+        font-size: 26px;
+    }
+    .boxBtnPag1 {
+        display: none;
+    }
+    .boxBtnPag2 {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .cntrOndeComprar button {
+        padding-left: 0px;
+    }
+    .boxBtnPag2 p {
+        padding: 20px;
+        font-size: 24px;
+        padding-right: 20px;
+        width: calc(100% - 60px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxBtnPag2 .frete {
+        font-size: 16px;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+}
