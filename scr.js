@@ -1,15 +1,25 @@
 document.querySelector(".contato").addEventListener("click", function() {
-    window.open("https://wa.me/5524998428760?text=Olá%20Pdr,%20quero%20atualizar%20meu%20guarda-roupa", "_blank");  });
+    window.open("https://wa.me/5524998428760?text=Olá%20Pdr,%20quero%20atualizar%20meu%20guarda-roupa", "_blank"); 
+});
 
+let previewProdutoIMG = document.querySelector(".previewProduto")
+function produtoSelect(element){
+    document.querySelector(".shadow").style.display = "flex"
+    const img = element.querySelector('.imgProduto'); // Seleciona a imagem dentro da div
+    let enderecoImg = img.src
+    console.log(enderecoImg.replace("produtos","produtos/imgG")); // Loga a src da imagem no console
+    previewProdutoIMG.src = enderecoImg.replace("produtos","produtos/imgG").replace("png","jpg")
+}
 
-    function produtoSelect(){
-        document.querySelector(".shadow").style.display = "flex"
-    }
-    fecharProdutoSelect()
-    function fecharProdutoSelect(){
-        document.querySelector(".shadow").style.display = "none"
-    }
+fecharProdutoSelect()
+function fecharProdutoSelect(){
+    document.querySelector(".shadow").style.display = "none"
+}
 
+function imageLoaded(img) {
+    const loader = img.parentNode.querySelector('.loader');
+    loader.style.display = 'none'; // Esconde o loader quando a imagem é carregada
+}
 
 /*
 if (cor == 'box-preto') {
@@ -57,7 +67,7 @@ imgProduto = document.querySelectorAll('.imgProduto')
 function corAtt(indice) {
     // Usa o índice para determinar o nome da div
     const boxNames = ['box-bordo', 'box-preto', 'box-azul'];
-    console.log(`Div com borda: ${boxNames[indice]}`);
+    //console.log(`Div com borda: ${boxNames[indice]}`);
 
     if (indice == 1) {
         imgProduto[0].src = "imgs/produtos/004.png"
@@ -69,6 +79,10 @@ function corAtt(indice) {
         imgProduto[6].src = "imgs/produtos/022.png"
         imgProduto[7].src = "imgs/produtos/028.png"
         imgProduto[8].src = "imgs/produtos/031.png"
+        imgProduto[9].src = "imgs/produtos/034.png"
+        imgProduto[10].src = "imgs/produtos/037.png"
+        imgProduto[11].src = "imgs/produtos/040.png"
+        imgProduto[12].src = "imgs/produtos/043.png"
     }
     else if (indice == 0) {
         imgProduto[0].src = "imgs/produtos/006.png"
@@ -80,6 +94,10 @@ function corAtt(indice) {
         imgProduto[6].src = "imgs/produtos/027.png"
         imgProduto[7].src = "imgs/produtos/030.png"
         imgProduto[8].src = "imgs/produtos/033.png"
+        imgProduto[9].src = "imgs/produtos/036.png"
+        imgProduto[10].src = "imgs/produtos/039.png"
+        imgProduto[11].src = "imgs/produtos/042.png"
+        imgProduto[12].src = "imgs/produtos/045.png"
     
     }
     else if (indice == 2) {
@@ -92,6 +110,10 @@ function corAtt(indice) {
         imgProduto[6].src = "imgs/produtos/026.png"
         imgProduto[7].src = "imgs/produtos/029.png"
         imgProduto[8].src = "imgs/produtos/032.png"
+        imgProduto[9].src = "imgs/produtos/035.png"
+        imgProduto[10].src = "imgs/produtos/038.png"
+        imgProduto[11].src = "imgs/produtos/041.png"
+        imgProduto[12].src = "imgs/produtos/044.png"
     
     }else{
         console.log("ue " + indice);
