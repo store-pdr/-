@@ -15,39 +15,28 @@
             <h2>Por onde prefere comprar?</h2>
             <p>*Os preços são diferentes devido as taxas de cada plataforma de venda</p>
             <button class="btnWhatsappPag">
-                <div class="boxBtnPag1">
-                    <p>WhatsApp</p>
-                </div>
-                <div class="boxBtnPag2 boxBtnPagWpp">
-                    <p><span class="rs">R$</span>24,99 <br><span class="frete">+ frete</span></p>
+
+                <div class="boxBtnPag2 boxBtnPagWpp" onclick="comprarPeloWpp()">
+                    <p class="textPrecoWpp"><span class="rs">R$</span>24,99 <br><span class="frete">+ frete</span></p>
                     <img src="imgs/plataformas/whatsapp.svg" alt="">
                 </div>
             </button>
             <button class="btnWhatsappPag">
-                <div class="boxBtnPag1">
-                    <p>Shopee</p>
-                </div>
-                <div class="boxBtnPag2 boxBtnPagShp">
-                    <p><span class="rs">R$</span>34,90 <br><span class="frete">frete grátis</span></p>
+                <div class="boxBtnPag2 boxBtnPagShp" onclick="comprarPelaShp()">
+                    <p class="textPrecoShop"><span class="rs">R$</span>34,90 <br><span class="frete">frete grátis</span></p>
                     <img src="imgs/plataformas/shopee.svg" alt="">
                 </div>
             </button>
-            <button class="btnWhatsappPag">
-                <div class="boxBtnPag1">
-                    <p>Mercado livre</p>
-                </div>
+            <button class="emManutencao btnWhatsappPag">
                 <div class="boxBtnPag2 boxBtnPagML">
-                    <p><span class="rs">R$</span>34,90 <br><span class="frete">frete grátis</span></p>
+                    <p>Em manutenção</p>
                     <img src="imgs/plataformas/ml.svg" alt="">                  
                 </div>
             </button>
-            <button class="btnWhatsappPag">
-                <div class="boxBtnPag1">
-                    <p>OLX</p>
-                </div>
-                <div class="boxBtnPag2 boxBtnPagOLX">
-                    <p><span class="rs">R$</span>29,90 <br><span class="frete">+ frete</span></p>
-                    <img src="imgs/plataformas/olx.svg" alt="">               
+            <button class="emManutencao btnWhatsappPag">
+                <div class="boxBtnPag2 boxBtnPagShein">
+                    <p>Em manutenção</p>
+                    <img src="imgs/plataformas/shein.svg" alt="">               
                 </div>
             </button>
             <button id="cancelar" onclick="fecharProdutoSelect()">Cancelar</button>
@@ -133,6 +122,7 @@
                 <div class="boxImgPost" onclick="produtoSelect(this)"><p class="precoPost"><span>R$</span>24,99</p><img class="imgProduto" src="imgs/produtos/037.png" alt="" onload="imageLoaded(this)"><div class="loader"></div></div>
                 <div class="boxImgPost" onclick="produtoSelect(this)"><p class="precoPost"><span>R$</span>24,99</p><img class="imgProduto" src="imgs/produtos/040.png" alt="" onload="imageLoaded(this)"><div class="loader"></div></div>
                 <div class="boxImgPost" onclick="produtoSelect(this)"><p class="precoPost"><span>R$</span>24,99</p><img class="imgProduto" src="imgs/produtos/043.png" alt="" onload="imageLoaded(this)"><div class="loader"></div></div>
+                <div class="boxImgPost" onclick="produtoSelect(this)"><p class="precoPost"><span>R$</span>29,99</p><img class="imgProduto" src="imgs/produtos/046.png" alt="" onload="imageLoaded(this)"><div class="loader"></div></div>
             </div>
 
         </div>
@@ -157,10 +147,21 @@
             <p>Links úteis</p>
             <button onclick="contato()">Fale consco</button>
             <button onclick="reclamação()">Reclamações</button>
-            <button onclick="duvida()">Dúvidas</button>
             <button onclick="erroNoSite()">Relatar um erro</button>
+            <button onclick="cupom()">Adicionar cupom</button>
         </div>
     </footer>
+    <div class="cntrCupom">
+        <div class="boxCupom">
+            <p>Quer um desconto? Fique ligado(a) nas redes da PDR'! Sempre soltamos cupons por lá, e você pode ser o(a) sortudo(a) a pegar primeiro! <br> <br>Já tem um? Então é só digitar aqui e aproveitar! Boas compras!</p>
+            <div class="cntrInputCupom">
+                <input type="text" name="" id="">
+                <button onclick="aplicarCupom()">Aplicar</button>
+    
+            </div>
+            <button class="btnCancelarCupom" onclick="fecharCupom()">Cancelar</button>
+        </div>
+    </div>
 
     <script src="scr.js"></script>
 </body>

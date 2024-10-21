@@ -93,6 +93,9 @@ main{
     width: fit-content;
     height: fit-content;
 }
+main > a{
+    color: blue;
+}
 main svg{
     width: 40px;
     height: 40px;
