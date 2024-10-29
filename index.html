@@ -14,6 +14,7 @@
     </div>
     <div class="shadow">
         <div class="cntrPreviewProduto">
+            <p>Carregando...</p>
             <img class="previewProduto" src="" alt="">
         </div>
         <div class="cntrOndeComprar">
@@ -156,18 +157,40 @@
             <button onclick="cupom()">Adicionar cupom</button>
         </div>
     </footer>
+
     <div class="cntrCupom">
+        <div class="headerCupom">
+            <button class="btnCancelarCupom" onclick="fecharCupom()"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 447.243 447.243" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M420.361 192.229a31.967 31.967 0 0 0-5.535-.41H99.305l6.88-3.2a63.998 63.998 0 0 0 18.08-12.8l88.48-88.48c11.653-11.124 13.611-29.019 4.64-42.4-10.441-14.259-30.464-17.355-44.724-6.914a32.018 32.018 0 0 0-3.276 2.754l-160 160c-12.504 12.49-12.515 32.751-.025 45.255l.025.025 160 160c12.514 12.479 32.775 12.451 45.255-.063a32.084 32.084 0 0 0 2.745-3.137c8.971-13.381 7.013-31.276-4.64-42.4l-88.32-88.64a64.002 64.002 0 0 0-16-11.68l-9.6-4.32h314.24c16.347.607 30.689-10.812 33.76-26.88 2.829-17.445-9.019-33.88-26.464-36.71z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg></button>
+        </div>
+
         <div class="boxCupom">
-            <p>Quer um desconto? Fique ligado(a) nas redes da PDR'! Sempre soltamos cupons por lá, e você pode ser o(a) sortudo(a) a pegar primeiro! <br> <br>Já tem um? Então é só digitar aqui e aproveitar! Boas compras!</p>
+            <p class="titleCupon">Quer um desconto?</p>
+            <p class="infosCupom">Fique ligado(a) nas redes da PDR'! Sempre soltamos cupons por lá, e você pode ser o(a) sortudo(a) a pegar primeiro! <br> <br>Já tem um? Então é só digitar aqui e aproveitar! Boas compras!</p>
             <div class="cntrInputCupom">
-                <input type="text" name="" id="">
-                <button onclick="aplicarCupom()">Aplicar</button>
-    
+                <label for="nomeCupom">Seu nome</label>
+                <input type="text" name="nomeCupom" id="nomeCupom" onblur="saveData('nomeCupom'); verifyNome()">    
             </div>
-            <button class="btnCancelarCupom" onclick="fecharCupom()">Cancelar</button>
+            <div class="cntrInputCupom">
+                <label for="emailCupom">Seu email</label>
+                <input type="email" name="emailCupom" id="emailCupom" onblur="saveData('emailCupom'); verifyEmail()">    
+            </div>
+            <div class="cntrInputCupom">
+                <label for="wppCupom">Seu WhatsApp</label>
+                <input type="tel" name="wppCupom" id="wppCupom" onblur="saveData('wppCupom'); verifyWhatsApp()" oninput="formatPhone(this)" maxlength="15">    
+            </div>
+        </div>
+
+        <div class="footerCupom">
+            <input type="text" name="cupom" id="cupom" onblur=" verifyCupom()">
+            <label for="cupom">Add seu cupom aqui</label>
+            <button disabled class="btnAplicarCupom" onclick="aplicarCupom()">
+                Aplicar cupom
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M497.231 211.692c8.157 0 14.769-6.613 14.769-14.769v-78.769c0-8.157-6.613-14.769-14.769-14.769H14.769C6.613 103.385 0 109.997 0 118.154v78.769c0 8.157 6.613 14.769 14.769 14.769 24.431 0 44.308 19.876 44.308 44.308S39.2 300.308 14.769 300.308C6.613 300.308 0 306.92 0 315.077v78.769c0 8.157 6.613 14.769 14.769 14.769h482.462c8.157 0 14.769-6.613 14.769-14.769v-78.769c0-8.157-6.613-14.769-14.769-14.769-24.431 0-44.308-19.876-44.308-44.308s19.877-44.308 44.308-44.308z" style="" fill="#1692ff" data-original="#1692ff" class=""></path><path d="M157.538 192c8.157 0 14.769-6.613 14.769-14.769v-73.846h-29.538v73.846c0 8.156 6.613 14.769 14.769 14.769zM172.308 334.769c0-8.157-6.613-14.769-14.769-14.769-8.157 0-14.769 6.613-14.769 14.769v73.846h29.538v-73.846zM157.538 290.462c-8.157 0-14.769-6.613-14.769-14.769v-39.385c0-8.157 6.613-14.769 14.769-14.769 8.157 0 14.769 6.613 14.769 14.769v39.385c.001 8.156-6.612 14.769-14.769 14.769z" style="" fill="#4f5ec6" data-original="#4f5ec6" class=""></path><path d="M497.231 103.385H256v305.231h241.231c8.157 0 14.769-6.613 14.769-14.769v-78.769c0-8.157-6.613-14.769-14.769-14.769-24.431 0-44.308-19.876-44.308-44.308s19.876-44.308 44.308-44.308c8.157 0 14.769-6.613 14.769-14.769v-78.769c0-8.158-6.613-14.77-14.769-14.77z" style="" fill="#007fdd" data-original="#007fdd" class=""></path></g></svg>
+            </button>
         </div>
     </div>
 
     <script src="scr.js"></script>
+    <script src="cupons.js"></script>
 </body>
 </html>

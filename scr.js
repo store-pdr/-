@@ -5,6 +5,7 @@ document.querySelector(".contato").addEventListener("click", function() {
 let previewProdutoIMG = document.querySelector(".previewProduto")
 let identificadorProduto = ""
 function produtoSelect(element){
+    previewProdutoIMG.src = ''
     document.querySelector(".shadow").style.display = "flex"
     document.querySelector(".shadow").scrollTop = 0;
     const img = element.querySelector('.imgProduto'); // Seleciona a imagem dentro da div
@@ -209,12 +210,12 @@ let shpLinkOniMask = "a da mascara de oni|https://shopee.com.br/Camisa-Streetwea
 let shpLinkGigantes = "a do GIGANTES|https://shopee.com.br/Camisa-Streetwear-unissex-Gigantes-Bk'-i.311460288.19497923692?sp_atk=b240a922-b0e7-4fd6-a4f5-70304ff8a366&xptdk=b240a922-b0e7-4fd6-a4f5-70304ff8a366"
 let shpLink777 = "a dos numeros lá, quero uma com 777|https://shopee.com.br/Camisa-Streetwear-unissex-n%C3%BAmeros-(mandar-no-chat-qual-numero)-i.311460288.22093441993?sp_atk=de054026-5378-4c88-a02f-8720e56e9bc9&xptdk=de054026-5378-4c88-a02f-8720e56e9bc9"
 let shpLinkEspadas = "a das espadas lá, quero uma com as chamas roxas|https://shopee.com.br/Camisa-Streetwear-Unissex-Espadas-(escolher-a-cor-das-chamas-pelo-chat)-i.311460288.18497981834?sp_atk=bd2db218-42f0-4def-b0fb-b43281aa85b2&xptdk=bd2db218-42f0-4def-b0fb-b43281aa85b2"
-let shpLinkFebreGrande = "a do FEBRE90S|https://shopee.com.br/product/311460288/22793480504/"
 let shpLinkPatoCentro = "a do pato do FEBRE90S no meio|https://shopee.com.br/Camisa-Streetwear-Unissex-Febre90s-Pumapjl-SonoTWS-i.311460288.22997976677?sp_atk=effe7532-52e7-45d1-8a9b-4e8ae62824f0&xptdk=effe7532-52e7-45d1-8a9b-4e8ae62824f0"
 let shpLinkPatoLateral = "a do pato do FEBRE90S no peito|https://shopee.com.br/Camisa-Streetwear-Unissex-Febre90s-Pumapjl-SonoTWS-i.311460288.23097971615?sp_atk=b51070c0-cac3-439a-a6e3-364d4ce56a8d&xptdk=b51070c0-cac3-439a-a6e3-364d4ce56a8d"
-let shpLinkFebreCostas = "a do FEBRE90S nas costas, quero com a estampa do pato na frente|https://shopee.com.br/Camisa-Streetwear-Unissex-Febre90s-Pumapjl-SonoTWS-i.311460288.22793480504?sp_atk=2693614d-2363-4da5-b5a1-eae1287cce9c&xptdk=2693614d-2363-4da5-b5a1-eae1287cce9c"
+let shpLinkFebreCostas = "a do FEBRE90S nas costas, quero com a estampa do pato na frente| https://shopee.com.br/Camisa-Streetwear-Unissex-Febre90s-Pumapjl-SonoTWS-i.311460288.19197972805?sp_atk=49326e37-7924-461d-af37-27506e996f9d"
 
 let shpLinkNike = "a da NIKE refletiva|linkNike"
+let shpLinkPequenoPeito = "a do FEBRE90S pequeno no peito|https://shopee.com.br/product/311460288/23893070484/"
 
 
 
@@ -250,9 +251,9 @@ const links = {
   "018": shpLinkChaos,
   
 // Febre grande no peito
-  "019": shpLinkFebreGrande,
-  "020": shpLinkFebreGrande,
-  "021": shpLinkFebreGrande,
+  "019": shpLinkPequenoPeito,
+  "020": shpLinkPequenoPeito,
+  "021": shpLinkPequenoPeito,
   
 // Pato no centro
   "022": shpLinkPatoCentro,
