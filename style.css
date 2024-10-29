@@ -877,16 +877,21 @@ footer > img{
         max-width: 100%;
         height: fit-content;
     }
-    .cntrPreviewProduto,.previewProduto {
-        width: calc(100% - 40px);
+    .previewProduto {
+        width: calc(100%);;
         height: fit-content;
-        min-width: calc(100% - 40px);
+        max-width: calc(100%);
+        min-width: calc(100%);
     }
     .cntrPreviewProduto {
         margin-top: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: calc(100% - 40px);;
+        height: fit-content;
+        max-width: calc(100% - 40px);
+        min-width: calc(100% - 40px);
     }
     .cntrOndeComprar h2 {
         font-size: 24px;
