@@ -846,7 +846,7 @@ footer > img{
     .cntrOndeComprar{
         max-width: 400px;
     }
-    .previewProduto {
+    .cntrPreviewProduto,.previewProduto {
         min-width: 400px;
         height: 400px;
     }
@@ -857,7 +857,7 @@ footer > img{
         max-width: 350px;
         height: 600px;
     }
-    .previewProduto {
+    .cntrPreviewProduto, .previewProduto {
         min-width: 350px;
         height: 350px;
     }
@@ -877,7 +877,7 @@ footer > img{
         max-width: 100%;
         height: fit-content;
     }
-    .previewProduto {
+    .cntrPreviewProduto,.previewProduto {
         width: calc(100% - 40px);
         height: fit-content;
         min-width: calc(100% - 40px);

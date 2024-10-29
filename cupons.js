@@ -171,6 +171,7 @@ window.onload = function() {
 };
 
 let btnAplicarCupom = document.querySelector(".btnAplicarCupom")
+btnAplicarCupom.disabled = true
 
 function liberarBtn(){
     
@@ -182,4 +183,11 @@ function liberarBtn(){
         btnAplicarCupom.disabled = true
 
     }
+}
+
+
+function aplicarCupom(){
+    alert("Cupom aplicado com sucesso, o valor será decontado na hora do pagamento!")
+    
+    fecharCupom()
 }

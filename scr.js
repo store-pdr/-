@@ -181,19 +181,16 @@ function reclamação() {
     window.open("https://wa.me/5524998428760?text=Ol%C3%A1%20PDR%2C%20quero%20fazer%20uma%20reclama%C3%A7%C3%A3o", "_blank");
 }
 function cupom() {
+  
     document.querySelector(".cntrCupom").style.display = "flex"
+    document.querySelector(".btnAplicarCupom").disabled = true
+
 }
 function fecharCupom(){
   document.querySelector(".cntrCupom").style.display = "none"
 }
 function erroNoSite() {
     window.open("https://wa.me/5524998428760?text=Ol%C3%A1%20PDR%2C%20achei%20um%20erro%20no%20seu%20site", "_blank");
-}
-function aplicarCupom(){
-    for (let i = 0; i < document.querySelectorAll(".precoPost").length; i++) {
-      document.querySelectorAll(".precoPost")[i].innerHTML = "R$12,49"
-    }
-    fecharCupom()
 }
 
 
